@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.flyonsky</groupId>
+  <artifactId>netflixstudy</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>netflixstudy</name>
+  <properties>
+  	<archaius.version>0.7.6</archaius.version>
+  	<servo.version>0.12.25</servo.version>
+  </properties>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+		    <groupId>com.netflix.servo</groupId>
+		    <artifactId>servo-core</artifactId>
+		    <version>${servo.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.netflix.archaius</groupId>
+		    <artifactId>archaius-core</artifactId>
+		    <version>${archaius.version}</version>
+		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  <modules>
+  	<module>archaiusstudy</module>
+  </modules>
+</project>
